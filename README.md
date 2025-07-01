@@ -1,4 +1,4 @@
-# Fake-news-Clasiffier
+# FakeNews Clasiffier
 wrk under progress
 
 
