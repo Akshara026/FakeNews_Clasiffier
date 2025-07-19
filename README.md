@@ -85,3 +85,66 @@ pip install -r requirements.txt
 python app.py
 
 Or run the training script in a notebook or script environment if you're using Google Colab or Jupyter.
+
+# RealFakeNews: A Dataset for Detecting Fake News
+
+RealFakeNews is a dataset of over **108,000** news samples designed for developing and evaluating models that detect misinformation. Each entry features a short news article and a label indicating whether it is **REAL** or **FAKE**.
+
+---
+
+## Dataset Overview
+
+- **Total Samples:** 108,032  
+- **Columns:**  
+  - `text`: News content (`string`)
+  - `label`: Classification label (`REAL` or `FAKE`)
+- **Language:** English
+- **Format:** CSV  
+- **License:** [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+---
+
+## Label Distribution
+
+| Label | Meaning    | Count   |
+|-------|------------|---------|
+| REAL  | Real News  | 64,641  |
+| FAKE  | Fake News  | 43,391  |
+
+> ⚠️ *Note: The dataset is slightly imbalanced, with more real news than fake news entries.*
+
+---
+
+## Use Cases
+
+- Fake news classification
+- NLP experiments on misinformation
+- Training and fine-tuning transformers (e.g., BERT, RoBERTa)
+- Evaluation using metrics like Accuracy, F1-score, ROC-AUC
+
+---
+
+## Sample Entry
+{
+  "text": "From India Censoring Internet Archive To No Night On Aug 12: Not Real....No! Banks are NOT charging Rs 150 after 4 transactions on...",
+  "label": "FAKE"
+}
+
+
+---
+
+## ⚠️ Warning
+
+- **Misinformation Risk:** This dataset contains content labeled "FAKE" that may include false or misleading information. "REAL" entries are not guaranteed to be fully accurate or current.
+- **Not for Automated Fact-Checking:** Models trained using this dataset **should not** be used for critical or real-world fact-checking without human oversight.
+- **Potential Bias:** Despite including a range of sources, some bias in topics, language, or framing may exist.
+- **Research & Educational Use Only:** Use is limited to non-commercial research/education. **Commercial use requires separate permission**.
+
+> Use this dataset responsibly and with awareness of its limitations.
+
+---
+
+**License:**  
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
