@@ -138,6 +138,80 @@ A **DeBERTa model**was fine-tuned on labeled news text (REAL vs FAKE).
   - **Optimizer**: AdamW
   - **Evaluation Metrics**: Accuracy, F1-score, Precision, Recall
 
+
+## Results
+
+We evaluated three models for binary fake news classification: **BERT**, **DeBERTa**, and a **Vision Transformer (ViT)** model. Below are their performance metrics on the respective test sets.
+
+---
+
+### BERT Results
+
+- **Test Set Size**: 21,607 samples  
+- **Accuracy**: 98%
+
+| Class     | Precision | Recall | F1-Score |
+|-----------|-----------|--------|----------|
+| Fake News | 0.98      | 0.97   | 0.98     |
+| Real News | 0.98      | 0.99   | 0.98     |
+| **Macro Avg** | 0.98  | 0.98   | 0.98     |
+| **Weighted Avg** | 0.98  | 0.98   | 0.98     |
+
+- Consistently high scores show BERT’s robustness in identifying both fake and real news.
+
+<!-- Optional ROC curve image -->
+<!-- ![BERT ROC Curve](assets/bert_roc.png) -->
+
+---
+
+### DeBERTa Results
+
+- **Test Set Size**: 21,607 samples  
+- **Accuracy**: 99%
+
+| Class     | Precision | Recall | F1-Score |
+|-----------|-----------|--------|----------|
+| Fake News | 0.99      | 0.98   | 0.98     |
+| Real News | 0.98      | 0.99   | 0.99     |
+| **Macro Avg** | 0.99  | 0.99   | 0.99     |
+| **Weighted Avg** | 0.99  | 0.99   | 0.99     |
+
+- DeBERTa demonstrates state-of-the-art performance with highly balanced metrics.
+
+<!-- ![DeBERTa ROC Curve](assets/deberta_roc.png) -->
+
+---
+
+### ViT Results
+
+- **Test Set Size**: 360 samples (balanced)  
+- **Accuracy**: 94%
+
+| Class     | Precision | Recall | F1-Score |
+|-----------|-----------|--------|----------|
+| Fake News | 0.93      | 0.95   | 0.94     |
+| Real News | 0.95      | 0.93   | 0.94     |
+| **Macro Avg** | 0.94  | 0.94   | 0.94     |
+| **Weighted Avg** | 0.94  | 0.94   | 0.94     |
+
+- Even with a smaller dataset, the ViT model exhibits strong and balanced performance.
+
+<!-- ![ViT Confusion Matrix](assets/vit_report.png) -->
+
+---
+
+### Summary
+
+| Model     | Accuracy | Macro F1-Score |
+|-----------|----------|----------------|
+| BERT      | 98%      | 0.98           |
+| DeBERTa   | 99%      | 0.99           |
+| ViT       | 94%      | 0.94           |
+
+> All models perform strongly in fake news detection. DeBERTa achieves the best overall performance. ViT holds promise, especially in multimodal or resource-constrained setups(also ViT ca be used for setetcting AI images only).
+
+
+
 ## 🛠 Libraries Used ##
 
  - transformers
