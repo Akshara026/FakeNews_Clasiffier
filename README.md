@@ -208,7 +208,7 @@ We evaluated three models for binary fake news classification: **BERT**, **DeBER
 | DeBERTa   | 99%      | 0.99           |
 | ViT       | 94%      | 0.94           |
 
-> All models perform strongly in fake news detection. DeBERTa achieves the best overall performance. ViT holds promise, especially in multimodal or resource-constrained setups(also ViT ca be used for setetcting AI images only).
+> All models perform strongly in fake news detection. DeBERTa achieves the best overall performance. ViT holds promise, especially in multimodal or resource-constrained setups(also ViT can be used for detecting AI images only).
 
 
 
