@@ -72,28 +72,28 @@ RealFakeNews is a dataset of over **108,000** news samples designed for developi
 
 We fine-tuned the BERT model (bert-base-uncased) on news articles. We combined the article title and content into one text input. The model learns to classify each article as REAL or FAKE.
 
--Tokenizer: BERT tokenizer with truncation and padding
--Loss Function: Weighted CrossEntropyLoss
--Optimizer: AdamW (lr = 2e-5)
--Evaluation Metrics: Accuracy, F1-score, Precision, Recall
+- Tokenizer: BERT tokenizer with truncation and padding
+- Loss Function: Weighted CrossEntropyLoss
+- Optimizer: AdamW (lr = 2e-5)
+- Evaluation Metrics: Accuracy, F1-score, Precision, Recall
 
 **DeBERTa (Text Classification)**
 
 DeBERTa is another transformer model we used to improve text classification results. It works similarly to BERT but gives better performance on longer and more complex text.
 
-Tokenizer: DeBERTa tokenizer (max_length = 128)
-Training Enhancements: Gradient checkpointing, FP32 precision
-Evaluation Strategy: Validation every 500 steps using F1-score
-Saving Strategy: Best model checkpoint saved based on F1
+- Tokenizer: DeBERTa tokenizer (max_length = 128)
+- Training Enhancements: Gradient checkpointing, FP32 precision
+- Evaluation Strategy: Validation every 500 steps using F1-score
+- Saving Strategy: Best model checkpoint saved based on F1
 
 **ViT for Image Classification**
 
 To detect whether an image is AI-generated or real, we fine-tuned the model using image data. The dataset is structured into two categories (real and fake) and preprocessed using ViTImageProcessor.
 
- Preprocessing: Pixel-level transformation using ViT’s image processor
- Training Strategy: Mixed-precision training (torch.amp) with early stopping
- Loss Function: CrossEntropyLoss
- Optimizer: AdamW with ReduceLROnPlateau scheduleru.
+ - Preprocessing: Pixel-level transformation using ViT’s image processor
+ - Training Strategy: Mixed-precision training (torch.amp) with early stopping
+ - Loss Function: CrossEntropyLoss
+ - Optimizer: AdamW with ReduceLROnPlateau scheduleru.
 
 ## How It Works ##
 
@@ -109,10 +109,10 @@ A **DeBERTa model**was fine-tuned on labeled news text (REAL vs FAKE).
 - Final predictions are binary:0 = FAKE and 1 = REAL
 
  A **Vision Transformer (ViT)** was fine-tuned on a labeled dataset of real and fake news images.
-    - Images are preprocessed using ViTImageProcessor to match the model's input format.
-    - A custom loader skips corrupt images to ensure smooth training.
-    - Training uses mixed precision, AdamW optimizer, and early stopping for efficiency and stability.
-    - The model outputs binary predictions:0 = FAKE and 1 = REAL
+ - Images are preprocessed using ViTImageProcessor to match the model's input format.
+ - A custom loader skips corrupt images to ensure smooth training.
+ - Training uses mixed precision, AdamW optimizer, and early stopping for efficiency and stability.
+ - The model outputs binary predictions:0 = FAKE and 1 = REAL
 
 
 ## Training Details ##
