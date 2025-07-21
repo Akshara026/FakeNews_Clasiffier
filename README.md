@@ -117,35 +117,35 @@ A **DeBERTa model**was fine-tuned on labeled news text (REAL vs FAKE).
 
 ## Training Details ##
 
-   **Model**: *BertForSequenceClassification*
-   **Epochs**: 4
-   **Batch size**: 8
-   **Learning rate**: 2e-5
-   **Optimizer**: AdamW 
-   **Evaluation Metrics**: Accuracy, F1-score, Precision, Recall
-
-   **Model**: *DebertaForSequenceClassification*
-   **Epochs**: 3
-   **Batch size**: 2 (with gradient accumulation steps = 4)
-   **Learning rate**: 2e-5
-   **Optimizer**: AdamW (Trainer with adamw_torch)
-   **Evaluation Metrics**: Accuracy, F1-score, Precision, Recall
-
-   **Model**: *ViTForImageClassification*
-   **Epochs**: 10
-   **Batch size**: 16
-   **Learning rate**: 2e-5
-   **Optimizer**: AdamW
-   **Evaluation Metrics**: Accuracy, F1-score, Precision, Recall
+  - **Model**: *BertForSequenceClassification*
+  - **Epochs**: 4
+  - **Batch size**: 8
+  - **Learning rate**: 2e-5
+  - **Optimizer**: AdamW 
+  - **Evaluation Metrics**: Accuracy, F1-score, Precision, Recall
+---
+  - **Model**: *DebertaForSequenceClassification*
+  - **Epochs**: 3
+  - **Batch size**: 2 (with gradient accumulation steps = 4)
+  - **Learning rate**: 2e-5
+  - **Optimizer**: AdamW (Trainer with adamw_torch)
+  - **Evaluation Metrics**: Accuracy, F1-score, Precision, Recall
+---
+  - **Model**: *ViTForImageClassification*
+  - **Epochs**: 10
+  - **Batch size**: 16
+  - **Learning rate**: 2e-5
+  - **Optimizer**: AdamW
+  - **Evaluation Metrics**: Accuracy, F1-score, Precision, Recall
 
 ## 🛠 Libraries Used ##
 
- transformers
- datasets
- torch
- scikit-learn
- pandas
- nltk (optional preprocessing)
+ - transformers
+ - datasets
+ - torch
+ - scikit-learn
+ - pandas
+ - nltk (optional preprocessing)
 
 ## 📦 Installation & Running ##
 
