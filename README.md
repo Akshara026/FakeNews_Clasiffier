@@ -160,7 +160,7 @@ We evaluated three models for binary fake news classification: **BERT**, **DeBER
 - Consistently high scores show BERT’s robustness in identifying both fake and real news.
 
 <!-- Optional ROC curve image -->
-<!-- ![BERT ROC Curve](assets/bert_roc.png) -->
+![BERT confusion matric](assets/bert.png)
 
 ---
 
@@ -178,7 +178,7 @@ We evaluated three models for binary fake news classification: **BERT**, **DeBER
 
 - DeBERTa demonstrates state-of-the-art performance with highly balanced metrics.
 
-<!-- ![DeBERTa ROC Curve](assets/deberta_roc.png) -->
+![DeBERTa confusion matrix](assets/deberta.png)
 
 ---
 
@@ -196,7 +196,7 @@ We evaluated three models for binary fake news classification: **BERT**, **DeBER
 
 - Even with a smaller dataset, the ViT model exhibits strong and balanced performance.
 
-<!-- ![ViT Confusion Matrix](assets/vit_report.png) -->
+![ViT Confusion Matrix](assets/vit.png)
 
 ---
 
