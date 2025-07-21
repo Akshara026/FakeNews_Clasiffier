@@ -1,7 +1,3 @@
-<img width="167" height="148" alt="image" src="https://github.com/user-attachments/assets/114e007c-3166-45b6-9d91-9514806acc0b" /># FakeNews Clasiffier
-wrk under progress
-
-
 ## Transformer Ensembles for Fake News Detection: A Multimodal Perspective with ViT, BERT, and DeBERTa ##
 
 - This project aims to accurately detect and classify both fake and real news content, as well as distinguish between AI-generated and authentic (real) images
@@ -177,8 +173,7 @@ We evaluated three models for binary fake news classification: **BERT**, **DeBER
 | **Weighted Avg** | 0.99  | 0.99   | 0.99     |
 
 - DeBERTa demonstrates state-of-the-art performance with highly balanced metrics.
-
-![DeBERTa confusion matrix](assets/deberta.png)
+<img src="assets/deberta.png" alt="DeBERTa Confusion Matrix" width="500">
 
 ---
 
