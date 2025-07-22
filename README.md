@@ -1,6 +1,6 @@
-## Transformer Ensembles for Fake News Detection: A Multimodal Perspective with ViT, BERT, and DeBERTa ##
+# Transformer Ensembles for Fake News Detection: A Multimodal Perspective with ViT, BERT, and DeBERTa
 
-- This project aims to accurately detect and classify both fake and real news content, as well as distinguish between AI-generated and authentic (real) images
+This project aims to accurately detect and classify both fake and real news content, as well as distinguish between AI-generated and authentic (real) images
 
 ## Dataset Description ##
 
@@ -10,7 +10,7 @@ RealFakeNews is a dataset of over **108,000** news samples designed for developi
 
 ---
 
-## Dataset Overview
+### Dataset Overview
 
 - **Total Samples:** 108,032  
 - **Columns:**  
@@ -22,7 +22,7 @@ RealFakeNews is a dataset of over **108,000** news samples designed for developi
 
 ---
 
-## Label Distribution
+### Label Distribution
 
 | Label | Meaning    | Count   |
 |-------|------------|---------|
@@ -33,7 +33,7 @@ RealFakeNews is a dataset of over **108,000** news samples designed for developi
 
 ---
 
-## Use Cases
+### Use Cases
 
 - Fake news classification
 - NLP experiments on misinformation
@@ -42,7 +42,7 @@ RealFakeNews is a dataset of over **108,000** news samples designed for developi
 
 ---
 
-## Sample Entry
+### Sample Entry
 {
   "text": "From India Censoring Internet Archive To No Night On Aug 12: Not Real....No! Banks are NOT charging Rs 150 after 4 transactions on...",
   "label": "FAKE"
@@ -51,7 +51,7 @@ RealFakeNews is a dataset of over **108,000** news samples designed for developi
 
 ---
 
-## ⚠️ Warning
+### ⚠️ Warning
 
 - **Misinformation Risk:** This dataset contains content labeled "FAKE" that may include false or misleading information. "REAL" entries are not guaranteed to be fully accurate or current.
 - **Not for Automated Fact-Checking:** Models trained using this dataset **should not** be used for critical or real-world fact-checking without human oversight.
@@ -61,7 +61,7 @@ RealFakeNews is a dataset of over **108,000** news samples designed for developi
 > Use this dataset responsibly and with awareness of its limitations.
 
 
-# Model Details #
+## Model Details
 - In Our project we used  a hybrid ensemble deep learning models—BERT, DeBERTa, and Vision Transformer to perform multimodal fake news detection. Specifically, the system classifies textual news content as real or fake, and distinguishes between AI-generated images and authentic real-world images.
 
 **BERT (Text Classification)**
@@ -109,6 +109,15 @@ A **DeBERTa model**was fine-tuned on labeled news text (REAL vs FAKE).
  - A custom loader skips corrupt images to ensure smooth training.
  - Training uses mixed precision, AdamW optimizer, and early stopping for efficiency and stability.
  - The model outputs binary predictions:0 = FAKE and 1 = REAL
+
+
+## Model Architecture
+
+The architecture used in this project is illustrated below. It provides a high-level overview of the components and data flow involved in the fake news classification pipeline.
+
+<div align="center">
+  <img src="assets/Archi.jpg" alt="Model Architecture Diagram" width="500">
+</div>
 
 
 ## Training Details ##
