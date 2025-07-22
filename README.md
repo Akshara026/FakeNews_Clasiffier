@@ -226,9 +226,9 @@ We evaluated three models for binary fake news classification: **BERT**, **DeBER
  - nltk (optional preprocessing)
 
 ## 📦 Installation & Running ##
-
-- pip install -r requirements.txt
-- python app.py
+```
+pip install -r requirements.txt
+```
 - Or run the training script in a notebook or script environment if you're using Google Colab or Jupyter.
 
 ## ⚠️Disclaimer
@@ -237,8 +237,8 @@ We evaluated three models for binary fake news classification: **BERT**, **DeBER
  - It is not suitable for real-world fact-checking or serious decision-making.
  - The model uses a simple binary classifier and does not verify factual correctness.
 
-### PS
-This fake news classifier was developed as part of a research internship. Our main aim was to learn how to fine-tune transformer models for classification tasks. While the model performs reasonably well, it is important to note that it may occasionally produce false positives or false negatives, as with any automated system. This tool should not be considered a definitive source for identifying fake news, but rather a step in exploring the practical applications and limitations of transformer-based models in natural language processing.
+### _PS_
+_This fake news classifier was developed as part of a research internship. Our main aim was to learn how to fine-tune transformer models for classification tasks. While the model performs reasonably well, it is important to note that it may occasionally produce false positives or false negatives, as with any automated system. This tool should not be considered a definitive source for identifying fake news, but rather a step in exploring the practical applications and limitations of transformer-based models in natural language processing._
 
 **License:**  
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
