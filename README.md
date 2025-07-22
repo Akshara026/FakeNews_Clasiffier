@@ -116,7 +116,7 @@ A **DeBERTa model**was fine-tuned on labeled news text (REAL vs FAKE).
 The architecture used in this project is illustrated below. It provides a high-level overview of the components and data flow involved in the fake news classification pipeline.
 
 <div align="center">
-  <img src="assets/Archi.jpg" alt="Model Architecture Diagram" width="500">
+  <img src="assets/Archi.jpg" alt="Model Architecture Diagram">
 </div>
 
 
